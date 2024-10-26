@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CSS LINK -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- JS LINK -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <!-- FONT AWSOME LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    .main img {
+      background-image: url(devloper\ img2.jpg);
+      height: 94vh;
+      width: 100vw;
+    }
+
+    ul li a:hover {
+      background-color: #0b36a8;
+      border-radius: 50px;
+    }
+
+    .card1 {
+      height: 300px;
+      width: 100vw;
+      background-color: #f7f9fb;
+    }
+
+    .card {
+      height: 300px;
+      width: 330px;
+      border: 1px solid rgb(200, 197, 197);
+    }
+
+    .personal {
+      height: 700px;
+      width: 100vw;
+      background-color: #f7f9fb;
+    }
+
+    .con-img {
+      height: 50px;
+      width: 50px;
+      display: flex;
+      gap: 15px;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    .round {
+      height: 50px;
+      width: 50px;
+      background-color: #0b36a8;
+      border-radius: 50%;
+
+    }
+
+    .icons {
+      margin-top: 150px;
+    }
+
+    .con-img img:hover {
+
+      transform: scale(1.3);
+      transition: 0.3s;
+
+    }
+
+    footer {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background-color: #212529;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    footer p:nth-child(1) {
+      font-size: 20px;
+      color: white;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    footer p:nth-child(2) {
+      color: white;
+      font-size: 15px;
+      width: 400px;
+      text-align: center;
+      line-height: 20px;
+    }
+
+    .socialme {
+      display: flex;
+    }
+
+    .socialme a {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0b36a8;
+      border-radius: 50%;
+      margin: 12px 6px;
+      color: white;
+      font-size: 20px;
+    }
+
+    .socialme a:hover {
+      transform: scale(1.3);
+      transition: 0.3s;
+    }
+
+    .end {
+      position: absolute;
+      color: whitesmoke;
+      bottom: 40px;
+      font-size: 14px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- navbar section start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="position: fixed;width: 100vw; z-index: 1;">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="imges/logo (2).png" alt="" style="margin-right: 300px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+            <li class="nav-item ">
+              <a class="nav-link text-light" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Services</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#" tabindex="-1" aria-disabled="true">content</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar section end -->
+
+
+  <!-- hero section start -->
+  <div class="hero">
+    <div class="main">
+      <img src="devloper img2.jpg" class="img-fluid" alt="...">
+    </div>
+  </div>
+  <!-- hero section end -->
+
+  <!-- about section start -->
+  <div class="card1">
+    <div class="container">
+      <div class="row">
+        <div class="col-4 mt-5 pe-5">
+          <h1>Hi there I'm Mark,</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente non autem at ullam eveniet
+            deserunt obcaecati error, voluptatem nemo vitae cupiditate illo sit sequi consequuntur laboriosam eaque
+            quasi soluta iusto omnis, dignissimos tempora magnam tenetur? Perferendis deleniti vero, sint aliquid, alias
+            vitae suscipit odio sed molestiae quod minus ea.</p>
+        </div>
+
+        <div class="col-4 mt-5 pe-5">
+          <span class="text-primary">2017-2018</span>
+          <h6>senior web designer</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, velit.</p>
+          <span class="text-primary">2016-2017</span>
+          <h6>junior web designer</h6>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, maiores?</p>
+        </div>
+
+        <div class="col-4 mt-5 pe-5">
+          <span class="text-primary">2019-PRESENT</span>
+          <h6>Freelance web Develpoer</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, quibusdam!</p>
+          <span class="text-primary">2018-2019</span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, fugit?</p>
+        </div>
+      </div>
+    </div>
+  </div><br><br><br><br><br>
+
+  <!-- about section end -->
+
+  <!-- services section start-->
+  <div class="container">
+    <div class="text-center">
+      <h1>offered services</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nulla doloremque distinctio voluptate accusamus
+        dolorem ipsa? Aliquid hic quod saepe, error impedit perspiciatis aperiam facilis praesentium? Culpa quis in
+        rerum sunt consequatur nisi voluptatibus natus nulla ut. Totam pariatur veritatis cumque omnis nemo, fuga illo.
+      </p>
+    </div>
+  </div>
+  <br><br><br>
+  <div class="card2 d-flex justify-content-center gap-5">
+    <div class="card">
+      <div class="border-dark p-4">
+        <i class="fa-sharp fa-regular fa-gem" style="color: #061a7f; font-size: 50px;"></i>
+        <h3 class="mt-3">DESIGN</h3>
+        <p class="fs-5 text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi vitae ad aut
+          expedita veritatis mollitia!</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="border-dark p-4">
+        <i class="fa-sharp fa-solid fa-code" style="color: #061a7f; font-size: 50px;"></i>
+        <h3 class="mt-3">DEVLOPEMENT</h3>
+        <p class="fs-5 text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab facere officiis
+          corporis dicta illum. Aperiam.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="border-dark p-4">
+        <i class="fa-solid fa-desktop" style="color: #061a7f; font-size: 50px;"></i>
+        <h3 class="mt-3">BASIC SEO</h3>
+        <p class="fs-5 text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe cumque vero facere
+          id deleniti? Sapiente!</p>
+      </div>
+    </div>
+  </div><br><br><br>
+  <!-- services section end -->
+
+  <!-- personal detail section start -->
+
+
+  <div class="personal" style="display: flex;">
+    <div class="col-6 border">
+      <img src="imges/black-white dev.jpg" class="img-fluid" alt="..." style="width: 50vw; height: 700px; opacity:15;">
+    </div>
+    <div class="container">
+      <div class="col-6" style="padding-top: 100px; padding-left:70px;">
+        <h1 class="fs-2 fw-bold">Why work with Me</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste voluptatibus ea possimus rerum reiciendis
+          neque.</p>
+        <br>
+        <h1 class="fs-4">DESIGN TOOLS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, laudantium perspiciatis cum fugit
+          aperiam.</p>
+        <br>
+        <h1 class="fs-4">DEVLOPEMENT SKILLS</h1>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A labore unde eos deleniti vel necessitatibus.</P>
+        <br>
+        <div class="con-img">
+          <img src="imges/asset 1.png" alt="">
+          <img src="imges/asset 2.png" alt="">
+          <img src="imges/asset 3.png" alt="">
+          <img src="imges/asset 4.png" alt="">
+          <img src="imges/asset 5.png" alt="">
+          <img src="imges/asset 6.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-center">
+    <h1 class="" style="padding-top: 100px; margin-right: 100px;">Delivered projects</h1>
+    <p class="col-10" style="padding-right:200px;margin-left: 200px;">Lorem ipsum dolor sit amet, consectetur
+      adipisicing elit. Dignissimos quaerat aliquid repellat at doloribus quis blanditiis ratione obcaecati accusantium
+      consequuntur?blanditiis ratione obcaecati accusantium consequuntur?blanditiis</p>
+    <div class="img-hover" style="margin-top: 50px;">
+      <img src="imges/asset 7.jpeg" alt="">
+      <br><br>
+      <p><span>For:</span> Jumbotron,<span> Project:</span> web design for their corporate websites and landing pages
+        for marketing campaigns<a href="https://themewagon.github.io/mark/project.html"> details</a> </p>
+      <br><br><br>
+      <img src="imges/asset 8.jpeg" alt="">
+      <br><br>
+      <p><span>For:</span> Carsrepo,<span> Project: </span>designed and developed modern platform for purchasing second
+        hand cars online <a href="https://themewagon.github.io/mark/project.html"> details</a></p>
+      <br><br><br>
+      <img src="imges/asset 9.jpeg" alt="">
+      <br><br>
+      <p><span>For:</span> Truevideo,<span>Project:</span> created a custom video editing and upload web app for this
+        awesome team <a href="https://themewagon.github.io/mark/project.html"> details</a></p>
+      <br><br><br>
+      <img src="imges/asset 10.jpeg" alt="">
+      <br><br>
+      <p><span>For:</span> Evolosim,<span>Projects:</span> complete redesign of their corporate website and platform
+        update for their online shop </p>
+      <br><br>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 gap-5 justify-content-center">
+      <div class="col-3">
+        <div class="p-3"><img src="imges/asset 11.jpeg" alt="" style="height: 200px;width: 300px;">
+          <p><span>For:</span> Zigoland, <span>Project:</span> started a new website from ground up for a new product <a
+              href="https://themewagon.github.io/mark/project.html">details</a></p>
+          </p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="p-3"><img src="imges/asset 12.jpeg" alt="" style="height: 200px;width: 300px;">
+          <p><span>For:</span> Visodream, <span>Project:</span> developed a new forum for the Visodream community</p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="p-3"><img src="imges/asset 13.jpeg" alt="" style="height: 200px;width: 300px;">
+          <p><span>For:</span> Primoday,<span> Project: </span>complete redesign of their corporate website and platform
+            details</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 gap-5 justify-content-center">
+      <div class="col-3">
+        <div class="p-3"><img src="imges/asset 14.jpeg" alt="" style="height: 200px;width: 300px;">
+          <p><span>For:</span> Zigoland, <span>Project:</span> started a new website from ground up for a new product <a
+              href="https://themewagon.github.io/mark/project.html">details</a></p>
+          </p>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="p-3"><img src="imges/asset 15.jpeg" alt="" style="height: 200px;width: 300px;">
+          <p><span>For:</span> Visodream, <span>Project:</span> developed a new forum for the Visodream community
+            <a href="#">details</a>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="p-3"><img src="imges/asset 16.jpeg" alt="" style="height: 200px;width: 300px;">
+          <p><span>For:</span> Primoday,<span> Project: </span>complete redesign of their corporate website and platform
+            <a href="#">details</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br>
+
+    <!-- profiles section start -->
+    <div class="profiles">
+      <h1 class="text-center fs-2 fw-bold">A few words from people that</h1>
+      <h1 class="text-center fs-2 fw-bold">chose to work with me</h1>
+    </div>
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3 d-flex justify-content-center gap-5 mt-3">
+      <div class="col-3">
+        <div class="p-3">
+          <p>“Mark is a skilled developer which will do everything possible to deliver the project on time and I really
+            appreciate that”</p>
+          <br>
+          <div class="d-flex">
+            <div>
+              <img src="imges/asset 17.jpeg" alt="" style="height: 60px;width: 60px;border-radius: 50%;">
+            </div>
+            <div class="px-3">
+              <h6 class="pt-1">Samantha Bloom</h6>
+              <h6 class="fw-light">Team Leader - Syncnow</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-3">
+        <div class="p-3">
+          <p>“Loved to work with Mark he's such an awesome developer with great attention to details. He also has a
+            great eye for design”</p>
+          <br>
+          <div class="d-flex">
+            <div>
+              <img src="imges/asset 18.jpeg" alt="" style="height: 60px;width: 60px;border-radius: 50%;">
+            </div>
+            <div class="px-3">
+              <h6 class="pt-1">John Rowling</h6>
+              <h6 class="fw-light">Marketing Manager - Nexlite</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="p-3">
+          <p>“So glad we started working with Mark. We've used many times his design and development skills for our
+            inhouse online projects”</p>
+          <br>
+          <div class="d-flex">
+            <div>
+              <img src="imges/asset 19.jpeg" alt="" style="height: 60px;width: 60px;border-radius: 50%;">
+            </div>
+            <div class="px-3">
+              <h6 class="pt-1">Lana Smith</h6>
+              <h6 class="fw-light">General Manager - Shifter</h6>
+            </div>
+
+          </div>
+
+          <br><br><br><br>
+        </div>
+
+      </div>
+    </div>
+    <hr class="col-10" style="margin-left: 110px;">
+  </div>
+  <!-- profile section end-->
+
+
+  <!-- accordiyan section -->
+
+  <div class="container">
+
+    <h1 class="text-center">Frequent questions</h1>
+    <br><br>
+    <div class="accordiyan" style="margin-left: 270px;">
+      <div class="accordion" id="accordionExample" style="width: 800px;">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Accordion Item #1
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Accordion Item #2
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Accordion Item #3
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+              plugin adds the appropriate classes that we use to style each element. These classes control the overall
+              appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+              CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <!-- contact section -->
+  <div class="box2" style="height: 800px; width: 100vw; background-color: #f7f9fb;">
+    <div class="container" style="padding-top: 100px;">
+      <h1 class="text-center">Contact details</h1>
+      <p class="text-center fs-5" style="padding-left: 100px;padding-right: 100px;">For any type of online project
+        please don't hesitate to get in touch with me. The fastest way is to send me
+        your message using the following email <a href="#">contact@domain.com</a></p>
+      <br><br>
+      <div class="mb-3">
+        <div class="contact-details" style="width: 1000px; padding-left: 250px; padding-right: 100px;">
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name"
+            style="height: 50px; width: 100%;">
+          <br>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email"
+            style="height: 50px;">
+          <br>
+          <div class="mb-3">
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"
+              placeholder="Project details"></textarea>
+          </div>
+          <br>
+          <button type="button" class="btn btn-outline-primary">
+            <h6 class="text-center" style="width: 630px;">Submit</h6>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <!-- footer section -->
+  <footer>
+    <p>Copyright © Your name</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi ab deleniti voluptatem, in nobis quos.</p>
+    <div class="socialme">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+
+    </div>
+    <p class="end">Distributed By Themewagon</p>
+  </footer>
+</body>
+
+</html>
